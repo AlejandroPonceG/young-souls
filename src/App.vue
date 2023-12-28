@@ -34,4 +34,8 @@ export default Vue.extend({
   width: 5px;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 </style>
