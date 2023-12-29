@@ -10,7 +10,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="py-4 px-5">
+  <div class="main-box py-4">
     <b-row class="align-items-center">
       <b-col class="left-column text-start">
         <div class="py-3">
@@ -28,7 +28,7 @@ export default defineComponent({
           <b-button variant="primary" class="btn-dark py-3"
             v-b-toggle.sidebar-no-header><span>VER PRODUCTOS</span></b-button
           >
-          <b-button variant="primary" class="btn-light py-3 mx-4"
+          <b-button variant="primary" class="btn-light py-3"
             ><b-icon-whatsapp class="text-success"></b-icon-whatsapp
             ><span class="text-dark mx-2">WhatsApp</span></b-button
           >
@@ -45,6 +45,12 @@ export default defineComponent({
 </template>
 
 <style>
+
+.main-box {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
 .left-title-text {
   color: #000;
   font-family: Inter;
@@ -73,7 +79,7 @@ export default defineComponent({
   min-width: 280px;
   width: 100% !important;
   height: 800px;
-  background-image: url("../../public/images/ropa.webp");
+  background-image: url("../../public/images/prueba2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -84,6 +90,7 @@ export default defineComponent({
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 10px;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 1000px) {
@@ -102,6 +109,15 @@ export default defineComponent({
 
   .copy {
     text-align: center;
+  }
+
+  .image-section {
+    height: 280px;
+  }
+
+  .main-box {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
 }

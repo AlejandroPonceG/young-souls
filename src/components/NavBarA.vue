@@ -14,7 +14,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="Navbar-base-box px-5">
+  <div class="Navbar-base-box">
     <div class="logo-section">
       <img class="nav-img" src="../../public/ys-icons/BG-2x-ico.png" alt="" />
       <div class="mx-2">
@@ -53,6 +53,8 @@ export default defineComponent({
 }
 
 .Navbar-base-box {
+  padding-left: 48px;
+  padding-right: 48px;
   width: 100%;
   height: 101px;
   display: flex;
@@ -109,5 +111,11 @@ export default defineComponent({
   .list-menu-trigger {
     display: block;
   }
+
+  .Navbar-base-box {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
 }
 </style>
