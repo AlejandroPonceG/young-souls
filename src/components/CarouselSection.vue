@@ -26,7 +26,7 @@ export default defineComponent({
         </div>
         <div class="py-3 complement-buttons-box">
           <b-button variant="primary" class="btn-dark py-3"
-            v-b-toggle.sidebar-no-header><span>PRODUCTOS</span></b-button
+            v-b-toggle.sidebar-no-header><span>VER PRODUCTOS</span></b-button
           >
           <b-button variant="primary" class="btn-light py-3 mx-4"
             ><b-icon-whatsapp class="text-success"></b-icon-whatsapp
@@ -73,7 +73,7 @@ export default defineComponent({
   min-width: 280px;
   width: 100% !important;
   height: 800px;
-  background-image: url("../../public/images/prueba2.jpg");
+  background-image: url("../../public/images/ropa.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
