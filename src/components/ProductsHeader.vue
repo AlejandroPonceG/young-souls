@@ -1,22 +1,17 @@
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   data() {
-    const paramId = ref(this.$route.params.Id);
-
     return {
-      paramId,
+      paramId: this.$route.params.Id,
     };
   },
-  methods: {},
-  watch: {
-    paramId(newValue, oldValue) {
-      console.log(newValue);
-      console.log(oldValue);
-    }
-  }
-
+  created() {
+    this.$watch('$route.params.Id', (newValue) => {
+      this.paramId = newValue;
+    });
+  },
 });
 </script>
 
